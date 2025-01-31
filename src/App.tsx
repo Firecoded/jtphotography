@@ -1,23 +1,22 @@
 import "./App.css";
 import Gallery from "./components/PhotoGallery";
+import logoAlt from "./assets/logo-alt.png";
 
 function App() {
     return (
-        <>
-            <div className="container">
-                <nav className="navbar bg-body-tertiary">
-                    <div className="container-fluid">
-                        <a className="navbar-brand" href="/">
-                            JTPI
-                        </a>
-                    </div>
-                </nav>
-            </div>
+        <div className="container">
+            <nav className="navbar bg-body-tertiary">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="/">
+                        <img src={logoAlt} alt="JDT Logo" style={{ height: "40px" }} />
+                    </a>
+                </div>
+            </nav>
 
-            <div>
-                <Gallery />
-            </div>
-        </>
+            <div className="my-5" style={{ height: 20 }}></div>
+
+            <Gallery />
+        </div>
     );
 }
 
