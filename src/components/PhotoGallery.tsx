@@ -32,6 +32,7 @@ enum ELocation {
     Vietnam = "Vietnam",
     Morocco = "Morocco",
     Spain = "Spain",
+    Italy = "Italy",
 }
 
 interface IPhoto {
@@ -238,6 +239,46 @@ const photos: IPhoto[] = [
         alt: "",
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
+    },
+    {
+        src: "/images/25.webp",
+        width: 3791,
+        height: 2532,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Italy],
+    },
+    {
+        src: "/images/26.webp",
+        width: 3966,
+        height: 2649,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Italy],
+    },
+    {
+        src: "/images/27.webp",
+        width: 3644,
+        height: 2434,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Italy],
+    },
+    {
+        src: "/images/28.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Italy],
+    },
+    {
+        src: "/images/29.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Italy],
     },
 ].map(
     ({ src, alt, width, height, keywords, location }) =>
