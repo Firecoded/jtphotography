@@ -20,7 +20,7 @@ import clsx from "clsx";
 enum EPhotoKeywords {
     All = "All",
     Street = "Street",
-    Nature = "Nature",
+    // Nature = "Nature",
     Landscape = "Landscape",
     Architecture = "Architecture",
     Portrait = "Portrait",
@@ -33,6 +33,8 @@ enum ELocation {
     Morocco = "Morocco",
     Spain = "Spain",
     Italy = "Italy",
+    Hungary = "Hungary",
+    Thailand = "Thailand",
 }
 
 interface IPhoto {
@@ -53,7 +55,47 @@ const photos: IPhoto[] = [
         width: 4240,
         height: 2832,
         alt: "Person on the side of a river",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Vietnam],
+    },
+    {
+        src: "/images/7.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Vietnam],
+    },
+    {
+        src: "/images/3.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Vietnam],
+    },
+    {
+        src: "/images/4.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Vietnam],
+    },
+    {
+        src: "/images/5.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Vietnam],
+    },
+    {
+        src: "/images/6.webp",
+        width: 4240,
+        height: 2832,
+        alt: "",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
     },
     {
@@ -62,46 +104,6 @@ const photos: IPhoto[] = [
         height: 2832,
         alt: "",
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait],
-        location: [ELocation.All, ELocation.Vietnam],
-    },
-    {
-        src: "/images/3.webp",
-        width: 4240,
-        height: 2832,
-        alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
-        location: [ELocation.All, ELocation.Vietnam],
-    },
-    {
-        src: "/images/4.webp",
-        width: 4240,
-        height: 2832,
-        alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
-        location: [ELocation.All, ELocation.Vietnam],
-    },
-    {
-        src: "/images/5.webp",
-        width: 4240,
-        height: 2832,
-        alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
-        location: [ELocation.All, ELocation.Vietnam],
-    },
-    {
-        src: "/images/6.webp",
-        width: 4240,
-        height: 2832,
-        alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
-        location: [ELocation.All, ELocation.Vietnam],
-    },
-    {
-        src: "/images/7.webp",
-        width: 4240,
-        height: 2832,
-        alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
         location: [ELocation.All, ELocation.Vietnam],
     },
     {
@@ -221,7 +223,7 @@ const photos: IPhoto[] = [
         width: 2238,
         height: 1494,
         alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Spain],
     },
     {
@@ -229,7 +231,7 @@ const photos: IPhoto[] = [
         width: 2830,
         height: 1890,
         alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Nature],
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Spain],
     },
     {
@@ -240,14 +242,14 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
     },
-    {
-        src: "/images/25.webp",
-        width: 3791,
-        height: 2532,
-        alt: "",
-        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
-        location: [ELocation.All, ELocation.Italy],
-    },
+    // {
+    //     src: "/images/25.webp",
+    //     width: 3791,
+    //     height: 2532,
+    //     alt: "",
+    //     keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+    //     location: [ELocation.All, ELocation.Italy],
+    // },
     {
         src: "/images/26.webp",
         width: 3966,
@@ -280,6 +282,118 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Italy],
     },
+    {
+        src: "/images/30.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Hungarian Parliament Building",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Hungary],
+    },
+    {
+        src: "/images/31.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Night view of Budapest from the river",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Hungary],
+    },
+    {
+        src: "/images/32.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Close-up of Hungarian Parliament dome",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Hungary],
+    },
+    {
+        src: "/images/33.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Hungarian Parliament Building illuminated at night",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Hungary],
+    },
+    {
+        src: "/images/34.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Golden Garuda statues at the Grand Palace, Bangkok",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/35.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Mural paintings at the Grand Palace, Bangkok",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/36.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Guardian Yaksha statue at Wat Phra Kaew, Bangkok",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/37.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Intricate details of Wat Arun temple, Bangkok",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/38.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Woman in Thai traditional attire at Wat Arun",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait, EPhotoKeywords.Street],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/39.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Women dressed in Thai traditional clothing at Wat Arun",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/40.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Women in traditional Thai dresses posing for photos",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Street],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/41.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Man and child on a motorcycle in busy traffic, Thailand",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/42.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Street food vendor cooking at a night market, Thailand",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Thailand],
+    },
+    {
+        src: "/images/43.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Two women running with pigeons flying at a historic brick wall",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Thailand],
+    },
 ].map(
     ({ src, alt, width, height, keywords, location }) =>
         ({
@@ -300,18 +414,14 @@ const photos: IPhoto[] = [
 export default function Gallery() {
     const [index, setIndex] = useState(-1);
     const [activeKeyword, setActiveKeyword] = useState(EPhotoKeywords.All);
-    const filteredPhotos =
-        activeKeyword === EPhotoKeywords.All
-            ? photos
-            : photos.filter((photo) => photo.keywords?.includes(activeKeyword));
-    console.log(filteredPhotos, activeKeyword, photos);
+    const filteredPhotos = photos.filter((photo) => photo.keywords?.includes(activeKeyword));
     return (
         <>
             <div className="mb-4 ">
                 {photoKeywords.map((pk) => (
                     <span
                         key={pk}
-                        className={clsx("pe-3 rounded cursor-pointer", activeKeyword === pk && "fw-bold")}
+                        className={clsx("pe-3 cursor-pointer", activeKeyword === pk && "fw-bold")}
                         onClick={() => setActiveKeyword(pk)}
                     >
                         {pk}

@@ -13,9 +13,10 @@ function App() {
                 </div>
             </nav>
 
-            <div className="my-5" style={{ height: 20 }}></div>
+            <div className="my-5"></div>
 
             <Gallery />
+            <div className="my-5"></div>
         </div>
     );
 }
