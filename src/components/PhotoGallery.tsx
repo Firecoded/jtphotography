@@ -218,7 +218,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/17_600px.webp",
-        rating: 5,
+        rating: 4,
     },
     {
         src: "/images/18.webp",
