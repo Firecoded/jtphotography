@@ -750,7 +750,7 @@ export default function Gallery() {
 
     return (
         <>
-            <div className="mb-2 d-flex align-items-center">
+            <div className="mb-2 d-flex align-items-center flex-wrap">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -778,7 +778,7 @@ export default function Gallery() {
                     </span>
                 ))}
             </div>
-            <div className="mb-4 d-flex align-items-center">
+            <div className="mb-4 d-flex align-items-center flex-wrap">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
