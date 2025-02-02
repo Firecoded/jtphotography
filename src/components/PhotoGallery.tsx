@@ -43,6 +43,7 @@ interface IPhoto extends Photo {
     keywords?: EPhotoKeywords[];
     location?: ELocation[];
     thumbnail: string;
+    rating: number;
 }
 
 const photoKeywords = Object.values(EPhotoKeywords);
@@ -57,7 +58,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/1_600px.webp",
-        rating: 9, //1-10
+        rating: 9,
     },
     {
         src: "/images/7.webp",
@@ -67,6 +68,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/7_600px.webp",
+        rating: 9,
     },
     {
         src: "/images/3.webp",
@@ -76,6 +78,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/3_600px.webp",
+        rating: 8,
     },
     {
         src: "/images/4.webp",
@@ -85,6 +88,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/4_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/5.webp",
@@ -94,6 +98,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/5_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/6.webp",
@@ -103,6 +108,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/6_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/2.webp",
@@ -112,6 +118,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/2_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/8.webp",
@@ -121,6 +128,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/8_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/9.webp",
@@ -130,6 +138,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Portrait],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/9_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/10.webp",
@@ -139,6 +148,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/10_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/11.webp",
@@ -148,6 +158,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/11_600px.webp",
+        rating: 9,
     },
     {
         src: "/images/12.webp",
@@ -157,6 +168,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/12_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/13.webp",
@@ -166,6 +178,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/13_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/14.webp",
@@ -175,6 +188,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/14_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/15.webp",
@@ -184,6 +198,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/15_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/16.webp",
@@ -193,6 +208,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/16_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/17.webp",
@@ -202,6 +218,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/17_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/18.webp",
@@ -211,6 +228,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/18_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/19.webp",
@@ -220,6 +238,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/19_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/20.webp",
@@ -229,6 +248,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/20_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/21.webp",
@@ -238,6 +258,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/21_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/22.webp",
@@ -247,6 +268,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/22_600px.webp",
+        rating: 8,
     },
     {
         src: "/images/23.webp",
@@ -256,6 +278,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/23_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/24.webp",
@@ -265,6 +288,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Spain],
         thumbnail: "/images/thumbnails/24_600px.webp",
+        rating: 5,
     },
     // {
     //     src: "/images/25.webp",
@@ -282,6 +306,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Italy],
         thumbnail: "/images/thumbnails/26_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/27.webp",
@@ -291,6 +316,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Italy],
         thumbnail: "/images/thumbnails/27_600px.webp",
+        rating: 8,
     },
     {
         src: "/images/28.webp",
@@ -300,6 +326,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Italy],
         thumbnail: "/images/thumbnails/28_600px.webp",
+        rating: 9,
     },
     {
         src: "/images/29.webp",
@@ -309,42 +336,47 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Italy],
         thumbnail: "/images/thumbnails/29_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/30.webp",
         width: 4240,
         height: 2832,
-        alt: "Hungarian Parliament Building",
+        alt: "Night view of Budapest from the river",
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Hungary],
         thumbnail: "/images/thumbnails/30_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/31.webp",
         width: 4240,
         height: 2832,
-        alt: "Night view of Budapest from the river",
+        alt: "Close-up of Hungarian Parliament dome",
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Hungary],
         thumbnail: "/images/thumbnails/31_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/32.webp",
         width: 4240,
         height: 2832,
-        alt: "Close-up of Hungarian Parliament dome",
+        alt: "Hungarian Parliament Building illuminated at night",
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Hungary],
         thumbnail: "/images/thumbnails/32_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/33.webp",
         width: 4240,
         height: 2832,
-        alt: "Hungarian Parliament Building illuminated at night",
+        alt: "Hungarian Parliament Building",
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Hungary],
         thumbnail: "/images/thumbnails/33_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/34.webp",
@@ -354,6 +386,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/34_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/35.webp",
@@ -363,6 +396,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/35_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/36.webp",
@@ -372,6 +406,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/36_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/37.webp",
@@ -381,6 +416,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/37_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/38.webp",
@@ -390,6 +426,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/38_600px.webp",
+        rating: 8,
     },
     {
         src: "/images/39.webp",
@@ -399,6 +436,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/39_600px.webp",
+        rating: 8,
     },
     {
         src: "/images/40.webp",
@@ -408,6 +446,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/40_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/41.webp",
@@ -417,6 +456,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/41_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/42.webp",
@@ -426,6 +466,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/42_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/43.webp",
@@ -435,6 +476,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Thailand],
         thumbnail: "/images/thumbnails/43_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/44.webp",
@@ -444,6 +486,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/44_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/45.webp",
@@ -453,6 +496,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/45_600px.webp",
+        rating: 5,
     },
     {
         src: "/images/46.webp",
@@ -462,6 +506,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/46_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/47.webp",
@@ -471,6 +516,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/47_600px.webp",
+        rating: 9,
     },
     {
         src: "/images/48.webp",
@@ -480,6 +526,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/48_600px.webp",
+        rating: 8,
     },
     {
         src: "/images/49.webp",
@@ -489,6 +536,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/49_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/50.webp",
@@ -498,6 +546,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/50_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/51.webp",
@@ -507,6 +556,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/51_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/52.webp",
@@ -516,6 +566,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/52_600px.webp",
+        rating: 6,
     },
     {
         src: "/images/53.webp",
@@ -525,6 +576,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/53_600px.webp",
+        rating: 7,
     },
     {
         src: "/images/54.webp",
@@ -534,6 +586,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/54_600px.webp",
+        rating: 9,
     },
     {
         src: "/images/55.webp",
@@ -543,7 +596,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Albania],
         thumbnail: "/images/thumbnails/55_600px.webp",
-        rating: 8,
+        rating: 5,
     },
     {
         src: "/images/56.webp",
@@ -553,7 +606,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Portrait, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/56_600px.webp",
-        rating: 9,
+        rating: 6,
     },
     {
         src: "/images/57.webp",
@@ -563,7 +616,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait, EPhotoKeywords.Street],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/57_600px.webp",
-        rating: 9,
+        rating: 8,
     },
     {
         src: "/images/58.webp",
@@ -573,7 +626,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/58_600px.webp",
-        rating: 8,
+        rating: 7,
     },
     {
         src: "/images/59.webp",
@@ -583,7 +636,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/59_600px.webp",
-        rating: 8,
+        rating: 6,
     },
     {
         src: "/images/60.webp",
@@ -593,7 +646,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary, EPhotoKeywords.Portrait],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/60_600px.webp",
-        rating: 9,
+        rating: 8,
     },
     {
         src: "/images/61.webp",
@@ -603,7 +656,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/61_600px.webp",
-        rating: 10,
+        rating: 9,
     },
     {
         src: "/images/62.webp",
@@ -613,7 +666,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/62_600px.webp",
-        rating: 9,
+        rating: 7,
     },
     {
         src: "/images/63.webp",
@@ -623,7 +676,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/63_600px.webp",
-        rating: 10,
+        rating: 7,
     },
     {
         src: "/images/64.webp",
@@ -633,7 +686,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Albania],
         thumbnail: "/images/thumbnails/64_600px.webp",
-        rating: 8,
+        rating: 6,
     },
     {
         src: "/images/65.webp",
@@ -653,17 +706,20 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Architecture],
         location: [ELocation.All, ELocation.Japan],
         thumbnail: "/images/thumbnails/66_600px.webp",
-        rating: 9,
+        rating: 7,
     },
-].map(({ src, alt, width, height, keywords, location, thumbnail }) => ({
-    src,
-    alt,
-    width,
-    height,
-    keywords,
-    location,
-    thumbnail,
-}));
+]
+    .map(({ src, alt, width, height, keywords, location, thumbnail, rating }) => ({
+        src,
+        alt,
+        width,
+        height,
+        keywords,
+        location,
+        thumbnail,
+        rating,
+    }))
+    .sort((a, b) => b.rating - a.rating);
 
 const thumbnails = photos.map((photo) => ({ ...photo, src: photo?.thumbnail }));
 
