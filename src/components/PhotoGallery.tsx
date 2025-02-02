@@ -766,8 +766,10 @@ export default function Gallery() {
                     <span
                         key={photoKeyword}
                         className={clsx(
-                            "pe-3 cursor-pointer",
-                            activeKeyword === photoKeyword && "fw-bold",
+                            "me-3 cursor-pointer",
+                            activeKeyword === photoKeyword
+                                ? "border-bottom border-2 border-black"
+                                : "border-bottom border-2 border-transparent",
                             !validKeywords.includes(photoKeyword) && "text-decoration-line-through cursor-not-allowed"
                         )}
                         onClick={() => {
@@ -793,7 +795,12 @@ export default function Gallery() {
                 {locations.map((location) => (
                     <span
                         key={location}
-                        className={clsx("pe-3 cursor-pointer", activeLocation === location && "fw-bold")}
+                        className={clsx(
+                            "me-3 cursor-pointer",
+                            activeLocation === location
+                                ? "border-bottom border-2 border-black"
+                                : "border-bottom border-2 border-transparent"
+                        )}
                         onClick={() => {
                             if (!validKeywords.includes(activeKeyword)) {
                                 setActiveKeyword(EPhotoKeywords.All);

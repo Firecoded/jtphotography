@@ -6,6 +6,10 @@
     cursor: not-allowed;
 }
 
+.border-transparent {
+    border-color: transparent !important;
+}
+
 /* bs override */
 @media (min-width: 1400px) {
     .container {
