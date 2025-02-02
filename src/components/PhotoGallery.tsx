@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "react-photo-album/rows.css";
 import type { Photo } from "react-photo-album";
+import clsx from "clsx";
 
 import { MasonryPhotoAlbum } from "react-photo-album";
 import "react-photo-album/masonry.css";
@@ -8,14 +9,12 @@ import "react-photo-album/masonry.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-// import optional lightbox plugins
+// optional lightbox plugins
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import clsx from "clsx";
-// import { motion, AnimatePresence } from "framer-motion";
 
 enum EPhotoKeywords {
     All = "All",
@@ -29,13 +28,15 @@ enum EPhotoKeywords {
 
 enum ELocation {
     All = "All",
-    Vietnam = "Vietnam",
+    Albania = "Albania",
+    Austria = "Austria",
+    Hungary = "Hungary",
+    Italy = "Italy",
+    Japan = "Japan",
     Morocco = "Morocco",
     Spain = "Spain",
-    Italy = "Italy",
-    Hungary = "Hungary",
     Thailand = "Thailand",
-    Austria = "Austria",
+    Vietnam = "Vietnam",
 }
 
 interface IPhoto extends Photo {
@@ -56,6 +57,7 @@ const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Documentary, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/1_600px.webp",
+        rating: 9, //1-10
     },
     {
         src: "/images/7.webp",
@@ -533,6 +535,126 @@ const photos: IPhoto[] = [
         location: [ELocation.All, ELocation.Austria],
         thumbnail: "/images/thumbnails/54_600px.webp",
     },
+    {
+        src: "/images/55.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Man walking on a sidewalk with shopping bags",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Albania],
+        thumbnail: "/images/thumbnails/55_600px.webp",
+        rating: 8,
+    },
+    {
+        src: "/images/56.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Women wearing colorful kimonos, Japan",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Portrait, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/56_600px.webp",
+        rating: 9,
+    },
+    {
+        src: "/images/57.webp",
+        width: 2832,
+        height: 4240,
+        alt: "Woman in a white kimono at a temple",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Portrait, EPhotoKeywords.Street],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/57_600px.webp",
+        rating: 9,
+    },
+    {
+        src: "/images/58.webp",
+        width: 2832,
+        height: 4240,
+        alt: "Busy street with Japanese signs and people walking",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/58_600px.webp",
+        rating: 8,
+    },
+    {
+        src: "/images/59.webp",
+        width: 2832,
+        height: 4240,
+        alt: "Narrow alleyway in Japan with people walking",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/59_600px.webp",
+        rating: 8,
+    },
+    {
+        src: "/images/60.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Two women in traditional kimonos waiting for a train",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary, EPhotoKeywords.Portrait],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/60_600px.webp",
+        rating: 9,
+    },
+    {
+        src: "/images/61.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Osaka Castle with a clear blue sky",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/61_600px.webp",
+        rating: 10,
+    },
+    {
+        src: "/images/62.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Crowd crossing at Shibuya Crossing, Tokyo",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/62_600px.webp",
+        rating: 9,
+    },
+    {
+        src: "/images/63.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Fushimi Inari Shrine torii gates, Kyoto",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/63_600px.webp",
+        rating: 10,
+    },
+    {
+        src: "/images/64.webp",
+        width: 4240,
+        height: 2832,
+        alt: "Cable car over a lush green valley",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
+        location: [ELocation.All, ELocation.Albania],
+        thumbnail: "/images/thumbnails/64_600px.webp",
+        rating: 8,
+    },
+    {
+        src: "/images/65.webp",
+        width: 2832,
+        height: 4240,
+        alt: "Pathway lined with orange torii gates in Japan",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/65_600px.webp",
+        rating: 8,
+    },
+    {
+        src: "/images/66.webp",
+        width: 3620,
+        height: 2418,
+        alt: "Aerial view of Tokyo skyline with river at sunset",
+        keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape, EPhotoKeywords.Architecture],
+        location: [ELocation.All, ELocation.Japan],
+        thumbnail: "/images/thumbnails/66_600px.webp",
+        rating: 9,
+    },
 ].map(({ src, alt, width, height, keywords, location, thumbnail }) => ({
     src,
     alt,
@@ -606,11 +728,11 @@ export default function Gallery() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    className="bi bi-compass me-3"
+                    className="bi bi-geo-alt me-3"
                     viewBox="0 0 16 16"
                 >
-                    <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0" />
-                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                 </svg>
                 {locations.map((location) => (
                     <span
@@ -628,37 +750,6 @@ export default function Gallery() {
                 ))}
             </div>
             <MasonryPhotoAlbum photos={filteredThumbs} onClick={({ index }) => setIndex(index)} spacing={10} />
-            {/* <div
-                className="d-grid"
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-                    gap: "10px",
-                }}
-            >
-                <AnimatePresence>
-                    {filteredPhotos.map((photo, idx) => (
-                        <motion.div
-                            key={photo.src}
-                            layout
-                            initial={{ transform: "scale(0)" }}
-                            animate={{ transform: "scale(1)" }}
-                            exit={{ transform: "scale(0)" }}
-                            onClick={() => setIndex(idx)}
-                        >
-                            <img
-                                src={photo.src}
-                                alt={photo.alt || "Gallery Image"}
-                                className="img-fluid shadow-sm"
-                                style={{
-                                    width: "100%",
-                                    height: "auto",
-                                }}
-                            />
-                        </motion.div>
-                    ))}
-                </AnimatePresence>
-            </div> */}
             <Lightbox
                 slides={filteredPhotos}
                 open={index >= 0}
