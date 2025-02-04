@@ -172,7 +172,7 @@ export const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Street, EPhotoKeywords.Documentary],
         location: [ELocation.All, ELocation.Morocco],
         thumbnail: "/images/thumbnails/14_600px.webp",
-        rating: 7,
+        rating: 6,
     },
     {
         src: "/images/15.webp",
@@ -300,7 +300,7 @@ export const photos: IPhoto[] = [
         keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
         location: [ELocation.All, ELocation.Italy],
         thumbnail: "/images/thumbnails/27_600px.webp",
-        rating: 8,
+        rating: 7,
     },
     {
         src: "/images/28.webp",
