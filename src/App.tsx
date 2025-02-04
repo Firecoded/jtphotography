@@ -1,5 +1,5 @@
 import "./App.css";
-import Gallery from "./components/PhotoGallery";
+import Gallery from "./Gallery";
 import logoAlt from "./assets/logo-shoots.png";
 
 function App() {
