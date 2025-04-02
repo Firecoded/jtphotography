@@ -5,11 +5,11 @@
 }
 
 .filter-item:hover {
-    color: #2a9d8f;
+    color: #a1876a;
 }
 
 .filter-item.active-border {
-    border-bottom: 1px solid #e9c46a;
+    border-bottom: 1px solid #b9a68b;
 }
 
 @media (min-width: 576px) {
