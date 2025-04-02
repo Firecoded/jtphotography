@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import clsx from "clsx";
 import { MasonryPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 import "react-photo-album/masonry.css";
@@ -16,7 +15,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 // import "yet-another-react-lightbox/plugins/captions.css";
 
-import { ELocation, EPhotoKeywords, locations, photoKeywords, photos } from "./photoData";
+import { ELocation, EPhotoKeywords, photos } from "./photoData";
 import Filters from "./Filters";
 
 const thumbnails = photos.map((photo) => ({ ...photo, src: photo?.thumbnail }));
@@ -26,7 +25,6 @@ export default function Gallery() {
     const [activeKeyword, setActiveKeyword] = useState(EPhotoKeywords.All);
     const [activeLocation, setActiveLocation] = useState(ELocation.All);
     const [searchParams, setSearchParams] = useSearchParams();
-    const [showThumbnails, setShowThumbnails] = useState(true);
 
     const filteredPhotos = photos.filter(
         (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
@@ -104,7 +102,7 @@ export default function Gallery() {
                     // Captions,
                     Zoom,
                 ]}
-                thumbnails={{ showToggle: true, hidden: !showThumbnails }}
+                thumbnails={{ showToggle: true }}
                 // captions={{ showToggle: true, hidden: true }}
             />
         </>
