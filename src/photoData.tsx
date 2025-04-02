@@ -28,6 +28,8 @@ export interface IPhoto extends Photo {
     location?: ELocation[];
     thumbnail: string;
     rating: number;
+    // title?: string;
+    // description?: string;
 }
 
 export const photoKeywords = Object.values(EPhotoKeywords);
@@ -43,6 +45,8 @@ export const photos: IPhoto[] = [
         location: [ELocation.All, ELocation.Vietnam],
         thumbnail: "/images/thumbnails/1_600px.webp",
         rating: 9,
+        // title: "some title",
+        // description: "some some some",
     },
     {
         src: "/images/7.webp",
@@ -692,15 +696,4 @@ export const photos: IPhoto[] = [
         thumbnail: "/images/thumbnails/66_600px.webp",
         rating: 7,
     },
-]
-    .map(({ src, alt, width, height, keywords, location, thumbnail, rating }) => ({
-        src,
-        alt,
-        width,
-        height,
-        keywords,
-        location,
-        thumbnail,
-        rating,
-    }))
-    .sort((a, b) => b.rating - a.rating);
+].sort((a, b) => b.rating - a.rating);
