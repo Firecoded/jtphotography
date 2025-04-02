@@ -1,0 +1,48 @@
+.filter-item,
+.filter-icon {
+    color: #264653;
+    font-size: 0.875rem; /* base (xs) */
+}
+
+.filter-item:hover {
+    color: #2a9d8f;
+}
+
+.filter-item.active-border {
+    border-bottom: 1px solid #e9c46a;
+}
+
+@media (min-width: 576px) {
+    .filter-item,
+    .filter-icon {
+        font-size: 0.9rem; /* sm */
+    }
+}
+
+@media (min-width: 768px) {
+    .filter-item,
+    .filter-icon {
+        font-size: 1rem; /* md */
+    }
+}
+
+@media (min-width: 992px) {
+    .filter-item,
+    .filter-icon {
+        font-size: 1.05rem; /* lg */
+    }
+}
+
+@media (min-width: 1200px) {
+    .filter-item,
+    .filter-icon {
+        font-size: 1.1rem; /* xl */
+    }
+}
+
+@media (min-width: 1400px) {
+    .filter-item,
+    .filter-icon {
+        font-size: 1.15rem; /* xxl */
+    }
+}

@@ -24,6 +24,7 @@ export enum ELocation {
 }
 
 export interface IPhoto extends Photo {
+    id: number;
     keywords?: EPhotoKeywords[];
     location?: ELocation[];
     thumbnail: string;
@@ -37,6 +38,7 @@ export const locations = Object.values(ELocation);
 
 export const photos: IPhoto[] = [
     {
+        id: 1,
         src: "/images/1.webp",
         width: 4240,
         height: 2832,
@@ -49,6 +51,7 @@ export const photos: IPhoto[] = [
         // description: "some some some",
     },
     {
+        id: 7,
         src: "/images/7.webp",
         width: 4240,
         height: 2832,
@@ -59,6 +62,7 @@ export const photos: IPhoto[] = [
         rating: 9,
     },
     {
+        id: 3,
         src: "/images/3.webp",
         width: 4240,
         height: 2832,
@@ -69,6 +73,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 4,
         src: "/images/4.webp",
         width: 4240,
         height: 2832,
@@ -79,6 +84,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 5,
         src: "/images/5.webp",
         width: 4240,
         height: 2832,
@@ -89,6 +95,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 6,
         src: "/images/6.webp",
         width: 4240,
         height: 2832,
@@ -99,6 +106,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 2,
         src: "/images/2.webp",
         width: 4240,
         height: 2832,
@@ -109,6 +117,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 8,
         src: "/images/8.webp",
         width: 4240,
         height: 2832,
@@ -119,6 +128,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 9,
         src: "/images/9.webp",
         width: 1197,
         height: 1792,
@@ -129,6 +139,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 10,
         src: "/images/10.webp",
         width: 3381,
         height: 2259,
@@ -139,6 +150,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 11,
         src: "/images/11.webp",
         width: 3738,
         height: 2496,
@@ -149,6 +161,7 @@ export const photos: IPhoto[] = [
         rating: 9,
     },
     {
+        id: 12,
         src: "/images/12.webp",
         width: 4240,
         height: 2832,
@@ -159,6 +172,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 13,
         src: "/images/13.webp",
         width: 4240,
         height: 2832,
@@ -169,6 +183,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 14,
         src: "/images/14.webp",
         width: 2586,
         height: 2586,
@@ -179,6 +194,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 15,
         src: "/images/15.webp",
         width: 4240,
         height: 2832,
@@ -189,6 +205,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 16,
         src: "/images/16.webp",
         width: 4240,
         height: 2832,
@@ -199,6 +216,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 17,
         src: "/images/17.webp",
         width: 4240,
         height: 2832,
@@ -209,6 +227,7 @@ export const photos: IPhoto[] = [
         rating: 4,
     },
     {
+        id: 18,
         src: "/images/18.webp",
         width: 2832,
         height: 4240,
@@ -219,6 +238,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 19,
         src: "/images/19.webp",
         width: 4240,
         height: 2832,
@@ -229,6 +249,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 20,
         src: "/images/20.webp",
         width: 4240,
         height: 2832,
@@ -239,6 +260,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 21,
         src: "/images/21.webp",
         width: 4240,
         height: 2832,
@@ -249,6 +271,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 22,
         src: "/images/22.webp",
         width: 2238,
         height: 1494,
@@ -259,6 +282,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 23,
         src: "/images/23.webp",
         width: 2830,
         height: 1890,
@@ -269,6 +293,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 24,
         src: "/images/24.webp",
         width: 1986,
         height: 2974,
@@ -278,15 +303,8 @@ export const photos: IPhoto[] = [
         thumbnail: "/images/thumbnails/24_600px.webp",
         rating: 5,
     },
-    // {
-    //     src: "/images/25.webp",
-    //     width: 3791,
-    //     height: 2532,
-    //     alt: "",
-    //     keywords: [EPhotoKeywords.All, EPhotoKeywords.Landscape],
-    //     location: [ELocation.All, ELocation.Italy],
-    // },
     {
+        id: 26,
         src: "/images/26.webp",
         width: 3966,
         height: 2649,
@@ -297,6 +315,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 27,
         src: "/images/27.webp",
         width: 3644,
         height: 2434,
@@ -307,6 +326,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 28,
         src: "/images/28.webp",
         width: 4240,
         height: 2832,
@@ -317,6 +337,7 @@ export const photos: IPhoto[] = [
         rating: 9,
     },
     {
+        id: 29,
         src: "/images/29.webp",
         width: 4240,
         height: 2832,
@@ -327,6 +348,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 30,
         src: "/images/30.webp",
         width: 4240,
         height: 2832,
@@ -337,6 +359,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 31,
         src: "/images/31.webp",
         width: 4240,
         height: 2832,
@@ -347,6 +370,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 32,
         src: "/images/32.webp",
         width: 4240,
         height: 2832,
@@ -357,6 +381,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 33,
         src: "/images/33.webp",
         width: 4240,
         height: 2832,
@@ -367,6 +392,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 34,
         src: "/images/34.webp",
         width: 4240,
         height: 2832,
@@ -377,6 +403,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 35,
         src: "/images/35.webp",
         width: 4240,
         height: 2832,
@@ -387,6 +414,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 36,
         src: "/images/36.webp",
         width: 4240,
         height: 2832,
@@ -397,6 +425,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 37,
         src: "/images/37.webp",
         width: 4240,
         height: 2832,
@@ -407,6 +436,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 38,
         src: "/images/38.webp",
         width: 4240,
         height: 2832,
@@ -417,6 +447,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 39,
         src: "/images/39.webp",
         width: 4240,
         height: 2832,
@@ -427,6 +458,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 40,
         src: "/images/40.webp",
         width: 4240,
         height: 2832,
@@ -437,6 +469,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 41,
         src: "/images/41.webp",
         width: 4240,
         height: 2832,
@@ -447,6 +480,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 42,
         src: "/images/42.webp",
         width: 4240,
         height: 2832,
@@ -457,6 +491,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 43,
         src: "/images/43.webp",
         width: 4240,
         height: 2832,
@@ -467,6 +502,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 44,
         src: "/images/44.webp",
         width: 4240,
         height: 2832,
@@ -477,6 +513,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 45,
         src: "/images/45.webp",
         width: 4240,
         height: 2832,
@@ -487,6 +524,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 46,
         src: "/images/46.webp",
         width: 4240,
         height: 2832,
@@ -497,6 +535,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 47,
         src: "/images/47.webp",
         width: 4240,
         height: 2832,
@@ -507,6 +546,7 @@ export const photos: IPhoto[] = [
         rating: 9,
     },
     {
+        id: 48,
         src: "/images/48.webp",
         width: 4240,
         height: 2832,
@@ -517,6 +557,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 49,
         src: "/images/49.webp",
         width: 4240,
         height: 2832,
@@ -527,6 +568,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 50,
         src: "/images/50.webp",
         width: 4240,
         height: 2832,
@@ -537,6 +579,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 51,
         src: "/images/51.webp",
         width: 4240,
         height: 2832,
@@ -547,6 +590,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 52,
         src: "/images/52.webp",
         width: 4240,
         height: 2832,
@@ -557,6 +601,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 53,
         src: "/images/53.webp",
         width: 4240,
         height: 2832,
@@ -567,6 +612,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 54,
         src: "/images/54.webp",
         width: 4240,
         height: 2832,
@@ -577,6 +623,7 @@ export const photos: IPhoto[] = [
         rating: 9,
     },
     {
+        id: 55,
         src: "/images/55.webp",
         width: 4240,
         height: 2832,
@@ -587,6 +634,7 @@ export const photos: IPhoto[] = [
         rating: 5,
     },
     {
+        id: 56,
         src: "/images/56.webp",
         width: 4240,
         height: 2832,
@@ -597,6 +645,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 57,
         src: "/images/57.webp",
         width: 2832,
         height: 4240,
@@ -607,6 +656,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 58,
         src: "/images/58.webp",
         width: 2832,
         height: 4240,
@@ -617,6 +667,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 59,
         src: "/images/59.webp",
         width: 2832,
         height: 4240,
@@ -627,6 +678,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 60,
         src: "/images/60.webp",
         width: 4240,
         height: 2832,
@@ -637,6 +689,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 61,
         src: "/images/61.webp",
         width: 4240,
         height: 2832,
@@ -647,6 +700,7 @@ export const photos: IPhoto[] = [
         rating: 9,
     },
     {
+        id: 62,
         src: "/images/62.webp",
         width: 4240,
         height: 2832,
@@ -657,6 +711,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 63,
         src: "/images/63.webp",
         width: 4240,
         height: 2832,
@@ -667,6 +722,7 @@ export const photos: IPhoto[] = [
         rating: 7,
     },
     {
+        id: 64,
         src: "/images/64.webp",
         width: 4240,
         height: 2832,
@@ -677,6 +733,7 @@ export const photos: IPhoto[] = [
         rating: 6,
     },
     {
+        id: 65,
         src: "/images/65.webp",
         width: 2832,
         height: 4240,
@@ -687,6 +744,7 @@ export const photos: IPhoto[] = [
         rating: 8,
     },
     {
+        id: 66,
         src: "/images/66.webp",
         width: 3620,
         height: 2418,
