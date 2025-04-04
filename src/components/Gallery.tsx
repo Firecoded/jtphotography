@@ -15,8 +15,9 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 // import "yet-another-react-lightbox/plugins/captions.css";
 
-import { ELocation, EPhotoKeywords, photos } from "./photoData";
+import { ELocation, EPhotoKeywords, photos } from "../photoData";
 import Filters from "./Filters";
+import useIsMobile from "../useIsMobile";
 
 const thumbnails = photos.map((photo) => ({ ...photo, src: photo?.thumbnail }));
 
@@ -25,6 +26,8 @@ export default function Gallery() {
     const [activeKeyword, setActiveKeyword] = useState(EPhotoKeywords.All);
     const [activeLocation, setActiveLocation] = useState(ELocation.All);
     const [searchParams, setSearchParams] = useSearchParams();
+
+    const isMobile = useIsMobile();
 
     const filteredPhotos = photos.filter(
         (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
@@ -74,7 +77,7 @@ export default function Gallery() {
                         setSearchParams({ photo: String(selectedPhoto.id) });
                     }
                 }}
-                spacing={10}
+                spacing={isMobile ? 5 : 10}
             />
             <Lightbox
                 slides={filteredPhotos}
@@ -93,7 +96,6 @@ export default function Gallery() {
                     searchParams.delete("photo");
                     setSearchParams(searchParams);
                 }}
-                // enable optional lightbox plugins
                 plugins={[
                     Fullscreen,
                     Slideshow,

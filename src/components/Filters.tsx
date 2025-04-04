@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ELocation, EPhotoKeywords, locations, photoKeywords } from "./photoData";
+import { ELocation, EPhotoKeywords, locations, photoKeywords } from "../photoData";
 import "./filters.css";
 
 interface IFiltersProps {
