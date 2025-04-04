@@ -104,7 +104,7 @@ export default function Gallery() {
                     // Captions,
                     Zoom,
                 ]}
-                thumbnails={{ showToggle: true }}
+                thumbnails={{ showToggle: true, hidden: true }}
                 // captions={{ showToggle: true, hidden: true }}
             />
         </>
