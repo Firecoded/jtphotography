@@ -29,11 +29,19 @@ export default function Gallery() {
 
     const isMobile = useIsMobile();
 
-    const filteredPhotos = photos.filter(
-        (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
+    const filteredPhotos = useMemo(
+        () =>
+            photos.filter(
+                (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
+            ),
+        [activeKeyword, activeLocation]
     );
-    const filteredThumbs = thumbnails.filter(
-        (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
+    const filteredThumbs = useMemo(
+        () =>
+            thumbnails.filter(
+                (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
+            ),
+        [activeKeyword, activeLocation]
     );
 
     // filter out photo types not applying to selected location
