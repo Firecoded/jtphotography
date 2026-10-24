@@ -1,0 +1,18 @@
+name = "jacobshoots-likes"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+workers_dev = false
+routes = [{ pattern = "likes.jacobshoots.pictures", custom_domain = true }]
+
+[vars]
+ALLOWED_ORIGINS = "https://jacobshoots.pictures,https://www.jacobshoots.pictures,http://localhost:5179"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "jacobshoots-likes"
+database_id = "73a62a23-5a20-43ca-aada-1c49c6ea7fb2"
+
+[[ratelimits]]
+name = "LIMITER"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }

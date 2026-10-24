@@ -34,3 +34,31 @@ body {
         max-width: 1580px;
     }
 }
+
+/* touch viewer: tap a photo to show or hide the toolbar */
+.lightbox-chrome-hidden .yarl__toolbar,
+.lightbox-chrome-hidden .yarl__thumbnails_container {
+    opacity: 0;
+    pointer-events: none;
+}
+.yarl__toolbar,
+.yarl__thumbnails_container {
+    transition: opacity 0.2s ease;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+}
+
+.like-button-on {
+    color: #e0626b;
+}
+
+.like-count {
+    color: #fff;
+    font-size: 0.85rem;
+    margin-left: -6px;
+    margin-right: 6px;
+    min-width: 1ch;
+}

@@ -1,0 +1,32 @@
+{
+    "regions": ["Americas", "Europe", "Africa", "Asia", "Oceania"],
+    "places": {
+        "Albania": {
+            "region": "Europe"
+        },
+        "Austria": {
+            "region": "Europe"
+        },
+        "Hungary": {
+            "region": "Europe"
+        },
+        "Italy": {
+            "region": "Europe"
+        },
+        "Spain": {
+            "region": "Europe"
+        },
+        "Morocco": {
+            "region": "Africa"
+        },
+        "Japan": {
+            "region": "Asia"
+        },
+        "Thailand": {
+            "region": "Asia"
+        },
+        "Vietnam": {
+            "region": "Asia"
+        }
+    }
+}

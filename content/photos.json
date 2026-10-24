@@ -1,0 +1,546 @@
+[
+    {
+        "id": 1,
+        "place": "Vietnam",
+        "keywords": ["Documentary", "Landscape"],
+        "rating": 9,
+        "alt": "Lone figure in a conical hat standing beneath trees beside a still river in Ninh Binh, Vietnam",
+        "original": "vietnam/JDT03849.jpg"
+    },
+    {
+        "id": 7,
+        "place": "Vietnam",
+        "keywords": ["Landscape"],
+        "rating": 9,
+        "alt": "Sun setting beside a limestone island with small boats silhouetted on the water, Ha Long Bay, Vietnam",
+        "original": "vietnam/JDT04019.jpg"
+    },
+    {
+        "id": 3,
+        "place": "Vietnam",
+        "keywords": ["Landscape"],
+        "rating": 8,
+        "alt": "View from a limestone peak over rice fields, villages, and karst hills in Ninh Binh, Vietnam",
+        "original": "vietnam/JDT03882.jpg"
+    },
+    {
+        "id": 4,
+        "place": "Vietnam",
+        "keywords": ["Landscape"],
+        "rating": 6,
+        "alt": "Tour boat cruising past dark limestone cliffs under a dramatic sky in Ha Long Bay, Vietnam",
+        "original": "vietnam/JDT03923.jpg"
+    },
+    {
+        "id": 5,
+        "place": "Vietnam",
+        "keywords": ["Landscape"],
+        "rating": 7,
+        "alt": "Turquoise water dotted with tour boats among forested limestone islands in Ha Long Bay, Vietnam",
+        "original": "vietnam/JDT03941.jpg"
+    },
+    {
+        "id": 6,
+        "place": "Vietnam",
+        "keywords": ["Landscape"],
+        "rating": 6,
+        "alt": "Towering limestone cliff above kayakers on green water in Ha Long Bay, Vietnam",
+        "original": "vietnam/JDT03973.jpg"
+    },
+    {
+        "id": 2,
+        "place": "Vietnam",
+        "keywords": ["Portrait"],
+        "rating": 6,
+        "alt": "Young woman in a red embroidered dress holding a white fan at a stone overlook above rice fields, Vietnam",
+        "original": "vietnam/JDT03864.jpg"
+    },
+    {
+        "id": 8,
+        "place": "Morocco",
+        "keywords": ["Documentary", "Street"],
+        "rating": 5,
+        "alt": "Sunlit whitewashed medina street with blue doors, shops, and people on the steps in Tangier, Morocco",
+        "original": "morocco/JDT01393.jpg"
+    },
+    {
+        "id": 9,
+        "place": "Morocco",
+        "keywords": ["Street", "Portrait"],
+        "rating": 7,
+        "alt": "Women in hijabs and long robes walking past a textile shop in a Moroccan market",
+        "original": "morocco/JDT01479.jpg"
+    },
+    {
+        "id": 10,
+        "place": "Morocco",
+        "keywords": ["Landscape", "Street", "Documentary"],
+        "rating": 7,
+        "alt": "Man in a turquoise robe and orange turban crouching near parked scooters while a cat walks by, Morocco",
+        "original": "morocco/JDT01429.jpg"
+    },
+    {
+        "id": 11,
+        "place": "Morocco",
+        "keywords": ["Documentary", "Street"],
+        "rating": 9,
+        "alt": "Shopkeeper on the phone outside a brass lantern shop as a man walks past, Morocco",
+        "original": "morocco/JDT01495.jpg"
+    },
+    {
+        "id": 12,
+        "place": "Morocco",
+        "keywords": ["Landscape"],
+        "rating": 5,
+        "alt": "Hillside view over a green park, palm-lined road, and port of Tangier on the Strait of Gibraltar, Morocco",
+        "original": "morocco/JDT01417.jpg"
+    },
+    {
+        "id": 13,
+        "place": "Morocco",
+        "keywords": ["Street"],
+        "rating": 6,
+        "alt": "Hands holding a phone over a vendor's colorful display of candy and dried fruit at a Moroccan market",
+        "original": "morocco/JDT01472.jpg"
+    },
+    {
+        "id": 14,
+        "place": "Morocco",
+        "keywords": ["Street", "Documentary"],
+        "rating": 6,
+        "alt": "Three women in pale robes and headscarves talking in a narrow medina lane, Morocco",
+        "original": "morocco/JDT01478.jpg"
+    },
+    {
+        "id": 15,
+        "place": "Morocco",
+        "keywords": ["Documentary", "Street"],
+        "rating": 5,
+        "alt": "Men drinking coffee at café tables under a large tree in a whitewashed square, Tangier, Morocco",
+        "original": "morocco/JDT01394.jpg"
+    },
+    {
+        "id": 16,
+        "place": "Morocco",
+        "keywords": ["Landscape"],
+        "rating": 5,
+        "alt": "Terrace of Café Cherifa in the Tangier kasbah with a man photographing the city below, Morocco",
+        "original": "morocco/JDT01433.jpg"
+    },
+    {
+        "id": 17,
+        "place": "Spain",
+        "keywords": ["Architecture"],
+        "rating": 4,
+        "alt": "Morning street scene with pedestrians, pastel apartment buildings, and a church tower in the distance, Spain",
+        "original": "spain/JDT00485.jpg"
+    },
+    {
+        "id": 18,
+        "place": "Spain",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Ornate white corner building with a domed tower above a tree-lined avenue, Spain",
+        "original": "spain/JDT00589.jpg"
+    },
+    {
+        "id": 19,
+        "place": "Spain",
+        "keywords": ["Architecture"],
+        "rating": 7,
+        "alt": "Courtyard of the Patio de las Doncellas framed by carved Moorish arches, Real Alcázar, Seville, Spain",
+        "original": "spain/JDT00638.jpg"
+    },
+    {
+        "id": 20,
+        "place": "Spain",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Ornate Renaissance stone hall with a carved coffered ceiling and sculpted relief panels, Spain",
+        "original": "spain/JDT00812.jpg"
+    },
+    {
+        "id": 21,
+        "place": "Spain",
+        "keywords": ["Architecture"],
+        "rating": 7,
+        "alt": "Looking up through an intricately carved Moorish arch with honeycomb plasterwork, Spain",
+        "original": "spain/JDT01005.jpg"
+    },
+    {
+        "id": 22,
+        "place": "Spain",
+        "keywords": ["Landscape"],
+        "rating": 8,
+        "alt": "Hikers on the cliffside boardwalk of the Caminito del Rey high above a red rock gorge, Spain",
+        "original": "spain/JDT01649.jpg"
+    },
+    {
+        "id": 23,
+        "place": "Spain",
+        "keywords": ["Landscape"],
+        "rating": 6,
+        "alt": "Footbridge spanning the Caminito del Rey gorge above a green river, Spain",
+        "original": "spain/JDT01662.jpg"
+    },
+    {
+        "id": 24,
+        "place": "Spain",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Cathedral bell tower framed by a narrow street of balconied buildings, Málaga, Spain",
+        "original": "spain/JDT01736.jpg"
+    },
+    {
+        "id": 26,
+        "place": "Italy",
+        "keywords": ["Landscape"],
+        "rating": 7,
+        "alt": "Terraced green hillsides falling to the blue sea along the Amalfi Coast, Italy",
+        "original": "italy/JDT03210.jpg"
+    },
+    {
+        "id": 27,
+        "place": "Italy",
+        "keywords": ["Landscape"],
+        "rating": 7,
+        "alt": "Crowded beach and boats in the clear blue water below Positano, Italy",
+        "original": "italy/JDT03356.jpg"
+    },
+    {
+        "id": 28,
+        "place": "Italy",
+        "keywords": ["Landscape"],
+        "rating": 9,
+        "alt": "Pastel houses stacked up the cliffs above the harbor of Positano, Italy",
+        "original": "italy/JDT03352.jpg"
+    },
+    {
+        "id": 29,
+        "place": "Italy",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Crowd beneath the gilded, painted ceiling of the Gallery of Maps in the Vatican Museums",
+        "original": "italy/JDT03626.jpg"
+    },
+    {
+        "id": 30,
+        "place": "Hungary",
+        "keywords": ["Architecture"],
+        "rating": 6,
+        "alt": "Budapest's riverside lit up at dusk, seen from a boat on the Danube, Hungary",
+        "original": "budapest/JDT02339.jpg"
+    },
+    {
+        "id": 31,
+        "place": "Hungary",
+        "keywords": ["Architecture"],
+        "rating": 6,
+        "alt": "Looking up at the Gothic spires and dome of the Hungarian Parliament Building, Budapest",
+        "original": "budapest/JDT02142.jpg"
+    },
+    {
+        "id": 32,
+        "place": "Hungary",
+        "keywords": ["Architecture"],
+        "rating": 7,
+        "alt": "Hungarian Parliament Building glowing gold at night above the Danube, Budapest",
+        "original": "budapest/JDT02385.jpg"
+    },
+    {
+        "id": 33,
+        "place": "Hungary",
+        "keywords": ["Architecture", "Landscape"],
+        "rating": 6,
+        "alt": "Hungarian Parliament Building behind an equestrian statue on a sunny day, Budapest",
+        "original": "budapest/JDT02086.jpg"
+    },
+    {
+        "id": 34,
+        "place": "Thailand",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Row of golden Garuda figures along a temple wall at the Grand Palace, Bangkok, Thailand",
+        "original": "bangkok/1/JDT04055.jpg"
+    },
+    {
+        "id": 35,
+        "place": "Thailand",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Long gallery of painted Ramakien murals at the Grand Palace, Bangkok, Thailand",
+        "original": "bangkok/1/JDT04059.jpg"
+    },
+    {
+        "id": 36,
+        "place": "Thailand",
+        "keywords": ["Architecture"],
+        "rating": 6,
+        "alt": "Giant demon guardian statue in front of a temple roof at Wat Phra Kaew, Bangkok, Thailand",
+        "original": "bangkok/1/JDT04065.jpg"
+    },
+    {
+        "id": 37,
+        "place": "Thailand",
+        "keywords": ["Architecture"],
+        "rating": 5,
+        "alt": "Close look at the porcelain-studded spire of Wat Arun against a deep blue sky, Bangkok, Thailand",
+        "original": "bangkok/1/JDT04140.jpg"
+    },
+    {
+        "id": 38,
+        "place": "Thailand",
+        "keywords": ["Portrait", "Street"],
+        "rating": 8,
+        "alt": "Woman in traditional Thai dress posing with hands pressed together against the tiled walls of Wat Arun, Bangkok",
+        "original": "bangkok/1/JDT04135.jpg"
+    },
+    {
+        "id": 39,
+        "place": "Thailand",
+        "keywords": ["Portrait", "Street", "Documentary"],
+        "rating": 7,
+        "alt": "Women in golden traditional Thai outfits adjusting their dresses at Wat Arun, Bangkok",
+        "original": "bangkok/1/JDT04138.jpg"
+    },
+    {
+        "id": 40,
+        "place": "Thailand",
+        "keywords": ["Documentary", "Street"],
+        "rating": 6,
+        "alt": "Visitors in traditional Thai costumes posing for photos in a sunny Wat Arun courtyard, Bangkok",
+        "original": "bangkok/1/JDT04153.jpg"
+    },
+    {
+        "id": 41,
+        "place": "Thailand",
+        "keywords": ["Street", "Documentary"],
+        "rating": 6,
+        "alt": "Man and child on a red motorcycle in afternoon traffic, Chiang Mai, Thailand",
+        "original": "chiangmai/JDT04267.jpg"
+    },
+    {
+        "id": 42,
+        "place": "Thailand",
+        "keywords": ["Street", "Documentary"],
+        "rating": 5,
+        "alt": "Masked street food vendor cooking in a wok at a busy outdoor market, Chiang Mai, Thailand",
+        "original": "chiangmai/JDT04298.jpg"
+    },
+    {
+        "id": 43,
+        "place": "Thailand",
+        "keywords": ["Street", "Documentary"],
+        "rating": 8,
+        "alt": "Two women running hand in hand as pigeons scatter in front of Tha Phae Gate, Chiang Mai, Thailand",
+        "original": "chiangmai/JDT04395.jpg"
+    },
+    {
+        "id": 44,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 7,
+        "alt": "Hallstatt's lakeside houses below steep forested mountains, Austria",
+        "original": "hallstat_exports/JDT02415.jpg"
+    },
+    {
+        "id": 45,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 5,
+        "alt": "View down over Lake Hallstatt and the valley town of Obertraun, Austria",
+        "original": "hallstat_exports/JDT02611.jpg"
+    },
+    {
+        "id": 46,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 7,
+        "alt": "Rocky Dachstein plateau with jagged snow-streaked peaks and a power line tower, Austria",
+        "original": "hallstat_exports/JDT02766 1.jpg"
+    },
+    {
+        "id": 47,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 9,
+        "alt": "Small boat crossing Lake Hallstatt toward the village and church spire, Austria",
+        "original": "hallstat_exports/JDT02685 1.jpg"
+    },
+    {
+        "id": 48,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 8,
+        "alt": "Rudolfsturm and the skywalk viewpoint above the Hallstatt valley, Austria",
+        "original": "hallstat_exports/JDT02584.jpg"
+    },
+    {
+        "id": 49,
+        "place": "Austria",
+        "keywords": ["Landscape", "Architecture"],
+        "rating": 7,
+        "alt": "Hallstatt village stretched along the lakeshore beneath green mountains, Austria",
+        "original": "hallstat_exports/JDT02654.jpg"
+    },
+    {
+        "id": 50,
+        "place": "Austria",
+        "keywords": ["Landscape", "Documentary"],
+        "rating": 7,
+        "alt": "People jumping into Lake Hallstatt from a grassy point below steep mountains, Austria",
+        "original": "hallstat_exports/JDT02668 1.jpg"
+    },
+    {
+        "id": 51,
+        "place": "Austria",
+        "keywords": ["Landscape", "Architecture"],
+        "rating": 7,
+        "alt": "Traditional alpine houses on the hillside reflected in Lake Hallstatt, Austria",
+        "original": "hallstat_exports/JDT02922.jpg"
+    },
+    {
+        "id": 52,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 6,
+        "alt": "Panorama of the Dachstein range and glacier over dwarf pine forest, Austria",
+        "original": "hallstat_exports/JDT02755.jpg"
+    },
+    {
+        "id": 53,
+        "place": "Austria",
+        "keywords": ["Architecture", "Documentary"],
+        "rating": 7,
+        "alt": "Colorful houses with flower boxes around the busy Hallstatt market square, Austria",
+        "original": "hallstat_exports/JDT02467.jpg"
+    },
+    {
+        "id": 54,
+        "place": "Austria",
+        "keywords": ["Landscape"],
+        "rating": 9,
+        "alt": "Small stone chapel on a high meadow facing the Dachstein peaks, Austria",
+        "original": "hallstat_exports/JDT02819 1.jpg"
+    },
+    {
+        "id": 55,
+        "place": "Albania",
+        "keywords": ["Street", "Documentary"],
+        "rating": 5,
+        "alt": "Men walking along a city sidewalk with shopping bags, Tirana, Albania",
+        "original": "albania/JDT02962.jpg"
+    },
+    {
+        "id": 56,
+        "place": "Japan",
+        "keywords": ["Street", "Portrait", "Documentary"],
+        "rating": 6,
+        "alt": "Two young women in bright kimonos with white fur stoles, one on the phone, Japan",
+        "original": "japan/JDT04657.jpg"
+    },
+    {
+        "id": 57,
+        "place": "Japan",
+        "keywords": ["Portrait", "Street"],
+        "rating": 7,
+        "alt": "Woman in a pale kimono standing beside a red temple pillar, Japan",
+        "original": "japan/JDT04629.jpg"
+    },
+    {
+        "id": 58,
+        "place": "Japan",
+        "keywords": ["Street", "Documentary"],
+        "rating": 7,
+        "alt": "Busy shopping street lined with tall signs and people in winter coats, Japan",
+        "original": "japan/JDT04436.jpg"
+    },
+    {
+        "id": 59,
+        "place": "Japan",
+        "keywords": ["Street", "Documentary"],
+        "rating": 6,
+        "alt": "Narrow city alley with hanging signs, power lines, and a few people walking, Japan",
+        "original": "japan/JDT04953.jpg"
+    },
+    {
+        "id": 60,
+        "place": "Japan",
+        "keywords": ["Street", "Documentary", "Portrait"],
+        "rating": 7,
+        "alt": "Two women in kimonos waiting on the Tambabashi station platform as a train pulls in, Kyoto, Japan",
+        "original": "japan/JDT05172.jpg"
+    },
+    {
+        "id": 61,
+        "place": "Japan",
+        "keywords": ["Architecture", "Landscape"],
+        "rating": 9,
+        "alt": "Osaka Castle above its stone walls under a clear blue sky, Japan",
+        "original": "japan/JDT05041 2.jpg"
+    },
+    {
+        "id": 62,
+        "place": "Japan",
+        "keywords": ["Street", "Documentary"],
+        "rating": 7,
+        "alt": "Crowd of people in winter coats crossing a busy Tokyo intersection, Japan",
+        "original": "japan/JDT04469.jpg"
+    },
+    {
+        "id": 63,
+        "place": "Japan",
+        "keywords": ["Architecture", "Landscape"],
+        "rating": 7,
+        "alt": "Tunnel of vermilion torii gates over a stone path at Fushimi Inari Shrine, Kyoto, Japan",
+        "original": "japan/JDT05226 1.jpg"
+    },
+    {
+        "id": 64,
+        "place": "Albania",
+        "keywords": ["Landscape"],
+        "rating": 6,
+        "alt": "Cable car line stretching over green hills toward the city of Tirana, Albania",
+        "original": "albania/JDT02984.jpg"
+    },
+    {
+        "id": 65,
+        "place": "Japan",
+        "keywords": ["Architecture"],
+        "rating": 7,
+        "alt": "Curving path through rows of orange torii gates inscribed with black characters, Fushimi Inari, Kyoto",
+        "original": "japan/JDT05202.jpg"
+    },
+    {
+        "id": 66,
+        "place": "Japan",
+        "keywords": ["Landscape", "Architecture"],
+        "rating": 7,
+        "alt": "Hazy view over Tokyo's dense skyline and the Sumida River from above, Japan",
+        "original": "japan/JDT04763.jpg"
+    },
+    {
+        "id": 67,
+        "place": "Vietnam",
+        "keywords": ["Architecture", "Street"],
+        "rating": 8,
+        "alt": "Da Nang street at dusk with a blue bus, motorbikes, and glowing seafood restaurant signs, Vietnam",
+        "original": "danang/JDT05475.jpg"
+    },
+    {
+        "id": 68,
+        "place": "Vietnam",
+        "keywords": ["Street", "Documentary"],
+        "rating": 7,
+        "alt": "Vendor and shopper talking at a night market stall full of plush toys and tote bags, Vietnam",
+        "original": "danang/JDT05697.jpg"
+    },
+    {
+        "id": 69,
+        "place": "Vietnam",
+        "keywords": ["Street", "Portrait"],
+        "rating": 7,
+        "alt": "Shirtless man with a surfboard cart under strings of lanterns on a palm-lined beach path at dusk, Da Nang, Vietnam",
+        "original": "danang/JDT05454 1.jpg"
+    }
+]

@@ -4,7 +4,23 @@
     font-size: 0.875rem; /* base (xs) */
 }
 
-.filter-item:hover {
+.filter-item,
+.place-item {
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.filter-item:disabled {
+    color: #264653;
+    cursor: not-allowed;
+}
+
+.filter-item:hover:not(:disabled),
+.place-item:hover {
     color: #a1876a;
 }
 
@@ -44,5 +60,37 @@
     .filter-item,
     .filter-icon {
         font-size: 1.15rem; /* xxl */
+    }
+}
+
+/* countries for the selected region; keeps its height so the grid doesn't jump */
+.place-row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    min-height: 1.75rem;
+    padding-top: 6px;
+}
+
+.place-row-indent {
+    width: 1em;
+    flex-shrink: 0;
+}
+
+.place-item {
+    margin-right: 16px;
+    color: #6c7a78;
+    font-size: 0.85rem;
+    border-bottom: 1px solid transparent;
+}
+
+.place-item-active {
+    color: #264653;
+    border-bottom-color: #b9a68b;
+}
+
+@media (min-width: 768px) {
+    .place-item {
+        font-size: 0.95rem;
     }
 }

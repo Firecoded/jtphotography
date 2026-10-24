@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "photos:prepare": "node scripts/prepare-photos.mjs",
+    "photos:upload": "node scripts/upload-photos.mjs"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -32,6 +34,7 @@
     "prettier": "^3.4.2",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "wrangler": "^4.152.0"
   }
 }

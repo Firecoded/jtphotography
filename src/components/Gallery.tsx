@@ -1,7 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { MasonryPhotoAlbum } from "react-photo-album";
-import "react-photo-album/rows.css";
 import "react-photo-album/masonry.css";
 
 // light box
@@ -11,79 +10,76 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-// import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-// import "yet-another-react-lightbox/plugins/captions.css";
 
-import { ELocation, EPhotoKeywords, photos } from "../photoData";
+import { LikeButton } from "../likes";
+import { CATEGORIES, photos, regions, slugify } from "../photos";
 import Filters from "./Filters";
 import useIsMobile from "../useIsMobile";
 
-const thumbnails = photos.map((photo) => ({ ...photo, src: photo?.thumbnail }));
+// Browser fullscreen on Android pins a "swipe to exit" toast, so touch devices get an edge-to-edge viewer instead.
+const isTouch = typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches;
+
+const fromSlug = <T extends string>(options: readonly T[], slug: string | null) =>
+    options.find((option) => slugify(option) === slug);
 
 export default function Gallery() {
     const [index, setIndex] = useState(-1);
-    const [activeKeyword, setActiveKeyword] = useState(EPhotoKeywords.All);
-    const [activeLocation, setActiveLocation] = useState(ELocation.All);
     const [searchParams, setSearchParams] = useSearchParams();
+    const [chromeHidden, setChromeHidden] = useState(isTouch);
+    // true when this tab pushed the ?photo entry, so closing can pop it and Back closes the viewer
+    const pushedHistory = useRef(false);
 
     const isMobile = useIsMobile();
 
+    const region = regions.find((r) => slugify(r.name) === searchParams.get("region"));
+    const place = region && fromSlug(region.places, searchParams.get("place"));
+    const category = fromSlug(CATEGORIES, searchParams.get("type"));
+
+    const photosInArea = useMemo(
+        () => photos.filter((p) => (place ? p.place === place : !region || p.region === region.name)),
+        [region, place]
+    );
+    const validCategories = useMemo(() => new Set(photosInArea.flatMap((p) => p.keywords)), [photosInArea]);
+    const activeCategory = category && validCategories.has(category) ? category : undefined;
     const filteredPhotos = useMemo(
-        () =>
-            photos.filter(
-                (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
-            ),
-        [activeKeyword, activeLocation]
-    );
-    const filteredThumbs = useMemo(
-        () =>
-            thumbnails.filter(
-                (photo) => photo.keywords?.includes(activeKeyword) && photo.location?.includes(activeLocation)
-            ),
-        [activeKeyword, activeLocation]
+        () => (activeCategory ? photosInArea.filter((p) => p.keywords.includes(activeCategory)) : photosInArea),
+        [photosInArea, activeCategory]
     );
 
-    // filter out photo types not applying to selected location
-    const photosByLocation = useMemo(() => {
-        return photos.filter((photo) => photo.location?.includes(activeLocation));
-    }, [activeLocation]);
-    const validKeywords = useMemo(() => {
-        return Array.from(new Set(photosByLocation.flatMap((photo) => photo.keywords)));
-    }, [photosByLocation]);
-
-    useEffect(() => {
-        if (!validKeywords.includes(activeKeyword)) {
-            setActiveKeyword(EPhotoKeywords.All);
+    const updateParams = (changes: Record<string, string | undefined>, push = false) => {
+        const next = new URLSearchParams(searchParams);
+        for (const [key, value] of Object.entries(changes)) {
+            if (value) next.set(key, value);
+            else next.delete(key);
         }
-    }, [validKeywords, activeKeyword, activeLocation]);
+        setSearchParams(next, { replace: !push });
+    };
 
     useEffect(() => {
-        // check photo query param on page load
         const photoId = searchParams.get("photo");
-        if (photoId) {
-            const idx = filteredPhotos.findIndex((p) => String(p.id) === photoId);
-            if (idx !== -1) setIndex(idx);
-        }
+        const idx = photoId ? filteredPhotos.findIndex((p) => String(p.id) === photoId) : -1;
+        if (idx === -1) pushedHistory.current = false;
+        setIndex(idx);
     }, [searchParams, filteredPhotos]);
 
     return (
         <>
             <Filters
-                activeKeyword={activeKeyword}
-                setActiveKeyword={setActiveKeyword}
-                validKeywords={validKeywords}
-                activeLocation={activeLocation}
-                setActiveLocation={setActiveLocation}
+                region={region?.name}
+                place={place}
+                category={activeCategory}
+                validCategories={validCategories}
+                onRegion={(name) => updateParams({ region: name && slugify(name), place: undefined })}
+                onPlace={(name) => updateParams({ place: name && slugify(name) })}
+                onCategory={(name) => updateParams({ type: name && slugify(name) })}
             />
             <MasonryPhotoAlbum
-                photos={filteredThumbs}
+                photos={filteredPhotos}
                 onClick={({ index }) => {
-                    setIndex(index);
-                    const selectedPhoto = filteredPhotos[index];
-                    if (selectedPhoto?.id) {
-                        setSearchParams({ photo: String(selectedPhoto.id) });
-                    }
+                    setChromeHidden(isTouch);
+                    pushedHistory.current = true;
+                    updateParams({ photo: String(filteredPhotos[index].id) }, true);
                 }}
                 spacing={isMobile ? 5 : 10}
             />
@@ -91,29 +87,32 @@ export default function Gallery() {
                 slides={filteredPhotos}
                 open={index >= 0}
                 index={index}
+                className={chromeHidden ? "lightbox-chrome-hidden" : undefined}
                 on={{
                     view: ({ index: currentIndex }) => {
-                        const selectedPhoto = filteredPhotos[currentIndex];
-                        if (selectedPhoto?.id) {
-                            setSearchParams({ photo: String(selectedPhoto.id) });
+                        const photo = filteredPhotos[currentIndex];
+                        if (photo && searchParams.get("photo") !== String(photo.id)) {
+                            updateParams({ photo: String(photo.id) });
                         }
                     },
+                    click: () => isTouch && setChromeHidden((hidden) => !hidden),
                 }}
                 close={() => {
                     setIndex(-1);
-                    searchParams.delete("photo");
-                    setSearchParams(searchParams);
+                    if (pushedHistory.current) {
+                        pushedHistory.current = false;
+                        history.back();
+                    } else {
+                        updateParams({ photo: undefined });
+                    }
                 }}
-                plugins={[
-                    Fullscreen,
-                    Slideshow,
-                    Thumbnails,
-                    // disabling for now
-                    // Captions,
-                    Zoom,
-                ]}
+                plugins={isTouch ? [Slideshow, Thumbnails, Zoom] : [Fullscreen, Slideshow, Thumbnails, Zoom]}
+                carousel={{ padding: isTouch ? 0 : "16px", preload: isTouch ? 1 : 2 }}
+                controller={{ closeOnPullDown: true, closeOnBackdropClick: !isTouch }}
+                render={isTouch ? { buttonPrev: () => null, buttonNext: () => null } : undefined}
+                styles={{ container: { backgroundColor: "#000" } }}
                 thumbnails={{ showToggle: true, hidden: true }}
-                // captions={{ showToggle: true, hidden: true }}
+                toolbar={{ buttons: [<LikeButton key="like" />, "close"] }}
             />
         </>
     );
