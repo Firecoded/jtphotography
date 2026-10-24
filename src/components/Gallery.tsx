@@ -17,8 +17,12 @@ import { CATEGORIES, photos, regions, slugify } from "../photos";
 import Filters from "./Filters";
 import useIsMobile from "../useIsMobile";
 
-// Browser fullscreen on Android pins a "swipe to exit" toast, so touch devices get an edge-to-edge viewer instead.
+// Touch devices get an edge-to-edge viewer; browser fullscreen stays opt-in there because Android shows a "swipe to exit" toast.
 const isTouch = typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches;
+// the home-screen app already runs fullscreen, so its fullscreen button would do nothing
+const isInstalledApp =
+    typeof window !== "undefined" &&
+    window.matchMedia("(display-mode: fullscreen), (display-mode: standalone)").matches;
 
 const fromSlug = <T extends string>(options: readonly T[], slug: string | null) =>
     options.find((option) => slugify(option) === slug);
@@ -106,7 +110,7 @@ export default function Gallery() {
                         updateParams({ photo: undefined });
                     }
                 }}
-                plugins={isTouch ? [Slideshow, Thumbnails, Zoom] : [Fullscreen, Slideshow, Thumbnails, Zoom]}
+                plugins={isInstalledApp ? [Slideshow, Thumbnails, Zoom] : [Fullscreen, Slideshow, Thumbnails, Zoom]}
                 carousel={{ padding: isTouch ? 0 : "16px", preload: isTouch ? 1 : 2 }}
                 controller={{ closeOnPullDown: true, closeOnBackdropClick: !isTouch }}
                 render={isTouch ? { buttonPrev: () => null, buttonNext: () => null } : undefined}
